@@ -1,11 +1,14 @@
+import { ActionSection, ComunicationSection } from "./styles";
+
 export function Project() {
   return (
     <div>
       <header>
-        <h1>Nome</h1>
+        <h1>Meu Projeto</h1>
+        <small>Ultima atualização: 01/01/2021</small>
       </header>
       <main>
-        <section>
+        <ActionSection>
           <div>
             <label>Branch</label>
             <select>
@@ -14,7 +17,10 @@ export function Project() {
             </select>
           </div>
           <button>Gerar versão</button>
-        </section>
+        </ActionSection>
+        <ComunicationSection>
+          
+        </ComunicationSection>
       </main>
     </div>
   )
