@@ -1,5 +1,14 @@
-export function Comment() {
+import { Container } from "./styles";
+
+export function Comment({ user, comment }) {
   return (
-    <div></div>
+    <Container>
+      <header>
+        { user }
+      </header>
+      <main>
+        { comment }
+      </main>
+    </Container>
   )
 }

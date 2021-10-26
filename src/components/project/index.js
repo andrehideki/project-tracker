@@ -1,4 +1,5 @@
-import { ActionSection, ComunicationSection } from "./styles";
+import { Comment } from "../comment";
+import { ActionSection, Comments, ComunicationSection } from "./styles";
 
 export function Project() {
   return (
@@ -19,7 +20,13 @@ export function Project() {
           <button>Gerar versão</button>
         </ActionSection>
         <ComunicationSection>
-          
+          <header>
+            <button>Novo comentario</button>
+          </header>
+          <Comments>
+            <Comment user="andre.hideki" comment="Projeto iniciado" />
+            <Comment user="socmar.lome" comment="Fazer ...." />
+          </Comments>
         </ComunicationSection>
       </main>
     </div>
